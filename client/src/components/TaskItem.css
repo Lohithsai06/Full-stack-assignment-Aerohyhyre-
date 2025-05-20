@@ -1,0 +1,215 @@
+/* Make sure these styles are in your TaskItem.css file */
+
+.task-item {
+  position: relative;
+  background-color: #f8f7fd;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s;
+  border-left: 4px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.8rem;
+}
+
+/* Priority color coding */
+.priority-high {
+  border-left-color: #ff6b6b !important; /* Red for high priority */
+}
+
+.priority-medium {
+  border-left-color: #feca57 !important; /* Orange/Yellow for medium priority */
+}
+
+.priority-low {
+  border-left-color: #1dd1a1 !important; /* Green for low priority */
+}
+
+.task-content {
+  flex: 1;
+}
+
+.task-title {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.task-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.label {
+  font-weight: 500;
+  color: #555;
+}
+
+.overdue {
+  color: #ff6b6b;
+}
+
+.overdue-label {
+  margin-left: 0.5rem;
+  font-weight: 500;
+}
+
+/* Delete button styling */
+.delete-task-button {
+  background-color: transparent;
+  color: #aaa;
+  border: none;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0.2rem 0.5rem;
+  border-radius: 50%;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete-task-button:hover {
+  background-color: #ffeeee;
+  color: #ff6b6b;
+
+  margin-bottom: 1rem;
+  text-align: left;
+  border-left: 4px solid #8a70d6;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 5px rgba(138, 112, 214, 0.1);
+}
+
+.task-item h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  color: #333333;
+  font-weight: 600;
+}
+
+.task-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.deadline, .priority {
+  color: #666;
+}
+
+/* Priority-based styling */
+.task-item.high {
+  border-left-color: #f44336;
+}
+
+.task-item.medium {
+  border-left-color: #ff9800;
+}
+
+.task-item.low {
+  border-left-color: #4caf50;
+}
+
+/* Overdue task styling */
+.task-item--overdue {
+  border-left-color: #f44336;
+  background-color: #fff5f5;
+}
+
+.task-item--overdue h3 {
+  color: #d32f2f;
+}
+
+.deadline--overdue {
+  color: #f44336;
+  font-weight: 500;
+}
+
+.overdue-label {
+  color: #f44336;
+  font-weight: 600;
+}
+
+/* Hover effect */
+.task-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(138, 112, 214, 0.15);
+}
+
+.task-item p {
+  margin: 0.5rem 0;
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.task-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.priority {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.priority-high {
+  background-color: #ffebee;
+  color: var(--danger-color);
+}
+
+.priority-medium {
+  background-color: #fff8e1;
+  color: var(--warning-color);
+}
+
+.priority-low {
+  background-color: #e8f5e9;
+  color: var(--success-color);
+}
+
+.status {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.task-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.task-actions button {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.8rem;
+}
+
+.deadline {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.deadline-icon {
+  color: var(--secondary-color);
+}

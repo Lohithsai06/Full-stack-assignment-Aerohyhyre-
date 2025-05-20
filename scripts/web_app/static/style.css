@@ -1,0 +1,156 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.header {
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.lead {
+    font-weight: 300;
+    color: #7f8c8d;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.card-header {
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+    font-weight: 500;
+}
+
+/* Upload Area Styles */
+.upload-card {
+    padding: 20px;
+}
+
+.file-upload-wrapper {
+    margin: 20px 0;
+}
+
+.file-upload-area {
+    border: 2px dashed #6c757d;
+    border-radius: 10px;
+    padding: 40px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.file-upload-area.highlight {
+    border-color: #007bff;
+    background-color: rgba(0, 123, 255, 0.05);
+}
+
+.file-upload-content {
+    color: #6c757d;
+}
+
+.file-upload-content svg {
+    color: #6c757d;
+    transition: color 0.3s ease;
+}
+
+.file-upload-area:hover .file-upload-content svg {
+    color: #007bff;
+}
+
+#browse-btn {
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-weight: 500;
+}
+
+#analyze-btn {
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+#analyze-btn:disabled {
+    opacity: 0.6;
+}
+
+/* Result Tables */
+.result-card {
+    overflow: hidden;
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+.table th {
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.badge {
+    font-weight: 500;
+    padding: 6px 10px;
+}
+
+/* Info Card */
+.info-card {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+}
+
+.info-card .card-title {
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+.info-card ul {
+    padding-left: 20px;
+}
+
+.info-card li {
+    margin-bottom: 5px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .file-upload-area {
+        padding: 20px 10px;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    .lead {
+        font-size: 1rem;
+    }
+}

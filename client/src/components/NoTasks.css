@@ -1,0 +1,50 @@
+/* NoTasks.css - Styling for the empty state message */
+
+.no-tasks-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+  text-align: center;
+  background-color: var(--light-gray);
+  border-radius: var(--border-radius);
+  color: #777;
+}
+
+.no-tasks-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--medium-gray);
+}
+
+.no-tasks-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.no-tasks-subtitle {
+  font-size: 0.9rem;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.create-task-button {
+  margin-top: 1.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.create-task-button:hover {
+  background-color: var(--secondary-color);
+}
